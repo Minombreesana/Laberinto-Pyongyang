@@ -24,8 +24,9 @@
     <a-scene physics="gravity:0; debug: false">
   
       <a-entity movement-controls kinematic-body>
-      <!--a-entity light="intensity:1; type:spot; penumbra:1.0"></a-entity>-->
-      <a-entity id="camera" camera position="0 2.5 0" look-controls></a-entity>
+    
+      <a-entity id="camera" camera position="0 2.5 0" look-controls 
+      light="intensity:1; type:point; penumbra:1.0"></a-entity>
       </a-entity>
   
   
@@ -34,6 +35,8 @@
       <img id="pared" src="assets/pared3.jpg">
       <img id="tapete" src="assets/tapete.jpg">
       <img id="techo" src="assets/techo.jpg">
+      <img id="kim1" src="assets/kim-01.jpg">
+      <img id="kim2" src="assets/kim-02.jpg">
       
       </a-assets>
 
@@ -99,11 +102,12 @@
   
       <!-- OBJETOS--> 
 
-
+<a-box src="#kim1" position="4.873 2.802 -15.171" scale="1.187 1.469 0.084" rotation="0 90 0 "></a-box>
+<a-box src="#kim2" position="4.930 2.802 -13.554" scale="1.187 1.469 0.084" rotation="0 90 0"></a-box>
 
       <!-- ILUMINACIÓN--> 
      
-      <a-entity light="intensity:0.8; type:ambient;"></a-entity>
+      <!--<a-entity light="intensity:0.8; type:ambient;"></a-entity>-->
       
   
     
